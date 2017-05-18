@@ -21,6 +21,37 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Add keywords to all pages -->
+<meta name="keywords" content="kyle, getz, portfolio, resume, photo, video, blog, travel, software, developer, web, coding, programming, photography, photographer, writing, international" />
+
+<!-- Add other meta tags -->
+<?php if (spacious_header_title() == 'Portfolio') { ?>
+
+<meta name="description" content="My portfolio, photo albums, and blog." />
+<meta property="og:title" content="Kyle Getz - Coder, Photographer, Traveler, Blogger" />
+
+<?php } elseif(spacious_header_title() == 'Photography') { ?>
+
+<meta name="description" content="Gallery of all my work as a recreational photographer." />
+
+<?php } elseif(spacious_header_title() == 'Blog') { ?>
+
+<meta name="description" content="My blog about travel, photography, and tech." />
+
+<?php } ?>
+
+<!-- Add the featured image as a meta tag -->
+<?php if (has_post_thumbnail()) { ?>
+
+<meta property="og:image" content="<?php the_post_thumbnail_url(); ?>" />
+
+<?php } ?>
+
+<!-- Add third-party imports -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/a061a068d0.js"></script>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
@@ -125,31 +156,25 @@ wp_head();
    			}
    		}
    	}
-
-		if( ( '' != spacious_header_title() )  && !( is_front_page() ) ) {
-			if( !( spacious_options( 'spacious_blog_slider', '0' ) != '1' && is_home( ) ) ){ ?>
-				<div class="header-post-title-container clearfix">
-					<div class="inner-wrap">
-						<div class="post-title-wrapper">
-							<?php
-							if( '' != spacious_header_title() ) {
-							?>
-                        <?php if ( is_home() ) : ?>
-   						   	<h2 class="header-post-title-class"><?php echo spacious_header_title(); ?></h2>
-                        <?php else : ?>
-                           <h1 class="header-post-title-class"><?php echo spacious_header_title(); ?></h1>
-                        <?php endif; ?>
-						   <?php
-							}
-							?>
-						</div>
-						<?php if( function_exists( 'spacious_breadcrumb' ) ) { spacious_breadcrumb(); } ?>
-					</div>
-				</div>
-			<?php
-			}
-	   	}
 		?>
+		<div class="header-post-title-container clearfix">
+			<div class="inner-wrap">
+				<div class="post-title-wrapper">
+					<?php
+					if( '' != spacious_header_title() ) {
+					?>
+                <?php if ( is_home() ) : ?>
+					   	<h2 class="header-post-title-class"><?php echo spacious_header_title(); ?></h2>
+                <?php else : ?>
+                   <h1 class="header-post-title-class"><?php echo spacious_header_title(); ?></h1>
+                <?php endif; ?>
+				   <?php
+					}
+					?>
+				</div>
+				<?php if( function_exists( 'spacious_breadcrumb' ) ) { spacious_breadcrumb(); } ?>
+			</div>
+		</div>
 	</header>
 	<?php do_action( 'spacious_after_header' ); ?>
 	<?php do_action( 'spacious_before_main' ); ?>
