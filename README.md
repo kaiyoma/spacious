@@ -1,6 +1,6 @@
 ## About
 
-This is my modified Spacious theme for use on my personal site (www.kylegetz.me).
+This is my modified Spacious theme for use on my personal site: www.kylegetz.me
 
 ## Links
 
