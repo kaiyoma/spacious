@@ -1794,10 +1794,6 @@ body:not(.single-post) .post .entry-content p::after {
     display: flex;
     align-items: center;
 }
-.post .entry-meta .date:hover,
-.post .entry-meta .category:hover {
-    color: #B41313;
-}
 .post .entry-meta .by-author,
 .post .entry-meta .read-more-link {
 	display: none;
