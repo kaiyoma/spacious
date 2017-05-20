@@ -158,10 +158,12 @@ pre {
 	border: 1px solid #EAEAEA;
 }
 pre, code, kbd, var, samp, tt {
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 17px;
+	font-family: Consolas, "Courier 10 Pitch", Courier, monospace;
+	font-size: 18px;
 	line-height: 19px;
 	white-space: pre-wrap;
+	color: #222222;
+	background-color: inherit;
 }
 abbr, acronym, dfn {
 	border-bottom: 1px dotted #666666;
