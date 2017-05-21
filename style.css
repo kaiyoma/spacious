@@ -375,6 +375,14 @@ img {
     padding: 8px;
     width: auto;
 }
+.post .entry-content img.no-border {
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
 .comment-content img, .widget img {
 	max-width: 100%; /* Fluid images for comments and widgets */
 }
