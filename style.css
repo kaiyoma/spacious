@@ -906,7 +906,7 @@ li.default-menu {
 }
 .header-post-title-class {
     color: #333333;
-	font-size: 22px;
+	font-size: 24px;
 	padding-bottom: 0;
 	line-height: 36px;
 }
@@ -1754,6 +1754,9 @@ body:not(.single-post) .post .entry-content p::after {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	width: 95%;
+}
+.post .entry-content .heavy-list li {
+	margin-bottom: 20px;
 }
 .entry-content ul {
 	list-style: disc;
