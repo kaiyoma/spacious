@@ -14,23 +14,25 @@
 		<?php
 			the_content();
 
-			$spacious_tag_list = get_the_tag_list( '', '&nbsp;&nbsp;&nbsp;&nbsp;', '' );
+			$spacious_tag_list = get_the_tag_list( '', ' ', '' );
 			if( !empty( $spacious_tag_list ) ) {
-				?>
+		?>
 				<div class="tags">
-					<?php
-					_e( 'Tagged on: ', 'spacious' ); echo $spacious_tag_list;
-					?>
+					<span class="tags-label"><?php _e( 'Tags', 'spacious' ); ?></span>
+					<span class="tags-container"><?php echo $spacious_tag_list; ?></span>
 				</div>
-				<?php
+		<?php
 			}
 
-			wp_link_pages( array(
-			'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.__( 'Pages:', 'spacious' ),
-			'after'             => '</div>',
-			'link_before'       => '<span>',
-			'link_after'        => '</span>'
-      ) );
+			$spacious_category_list = get_the_category_list( ' ' );
+			if( !empty( $spacious_category_list ) ) {
+		?>
+				<div class="tags">
+					<span class="tags-label"><?php _e( 'Categories', 'spacious' ); ?></span>
+					<span class="tags-container"><?php echo $spacious_category_list; ?></span>
+				</div>
+		<?php
+			}
 		?>
 	</div>
 

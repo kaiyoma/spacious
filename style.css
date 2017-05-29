@@ -1799,6 +1799,9 @@ body:not(.single-post) .post .entry-content p::after {
 	float: right;
 	padding-left: 4%;
 }
+.entry-meta-bar {
+	display: none;
+}
 .post .entry-meta {
 	border: 1px solid #EAEAEA;
 	font-size: 16px;
@@ -1816,10 +1819,6 @@ body:not(.single-post) .post .entry-content p::after {
 .post .entry-meta .category {
     display: flex;
     align-items: center;
-}
-.post .entry-meta .by-author,
-.post .entry-meta .read-more-link {
-	display: none;
 }
 .post .entry-meta a, .type-page .entry-meta a {
 	color: #666666;
@@ -1860,16 +1859,25 @@ body:not(.single-post) .post .entry-content p::after {
     font-family: 'Lato', sans-serif;
     font-size: 17px;
 	margin: 30px 0;
+	display: flex;
+	border: 1px solid #EAEAEA;
+}
+.single #content .tags .tags-label {
+	background-color: #FAFAFA;
+	padding: 5px 10px;
+	border-right: 1px solid #EAEAEA;
+}
+.single #content .tags .tags-container {
+	padding: 5px 10px;
 }
 .single #content .tags a {
-	border: 1px solid #EAEAEA;
-	padding: 3px 5px;
-	border-radius: 3px;
-	color: #666666;
+	border-bottom: none;
+	white-space: nowrap;
+	margin-right: 10px;
 }
 .single #content .tags a:hover {
-    color: #B41313;
 	text-decoration: none;
+	border-bottom: 2px solid #B41313;
 }
 
 /* header media css
