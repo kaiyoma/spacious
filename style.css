@@ -2013,6 +2013,14 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 	}
 }
 @media screen and (max-width: 768px) {
+	body {
+		background: #FEFEFB;
+		background-image: none !important;
+	}
+	#page {
+		border: none;
+		box-shadow: none;
+	}
 	#primary, #secondary, .wide-978 #primary, .narrow-978 #primary {
 		float: none;
 		width: 100%;
