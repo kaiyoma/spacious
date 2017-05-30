@@ -1732,15 +1732,18 @@ body:not(.single-post) .post .entry-content p::after {
 .single #content .post {
 	padding-bottom: 20px;
 }
+.post .entry-header {
+	margin-bottom: 15px;
+}
 .post .entry-title, .page .entry-title {
 	font-size: 26px;
 	line-height: 32px;
+	padding-bottom: 0;
 }
 .post .entry-title a, .page .entry-title a {
-	color: #444444;
+	color: #B41313;
 }
 .post .entry-title a:hover, .page .entry-title a:hover {
-	color: #B41313;
     border-bottom: 2px solid;
 }
 .post .entry-content {
@@ -2203,7 +2206,8 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
   color: #444444;
   display: flex;
   flex-wrap: wrap;
-  font-size: 22px;
+  font-size: 24px;
+  line-height: 32px;
   padding-bottom: 0;
 }
 
@@ -2220,7 +2224,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 
 .album-header-date {
   color: #999999;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .album-header-blog {
@@ -2318,10 +2322,13 @@ aside .error {
   padding: 10px;
 }
 
-/* Posted date
+/* Blog post dates
 ----------------------------------------------- */
-#posted-date {
+.posted-date {
   color: #999999;
   font-size: 16px;
+}
+
+.single .posted-date {
   margin-bottom: 15px;
 }

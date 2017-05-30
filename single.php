@@ -12,9 +12,7 @@ get_header(); ?>
 
 	<div id="primary">
         <!-- Display the date the entry was posted -->
-        <div id="posted-date">
-            Posted on <?php echo get_the_date('l, F j, Y'); ?>
-        </div>
+        <div class="posted-date">Posted on <?php echo get_the_date('l, F j, Y'); ?></div>
 
 		<div id="content" class="clearfix">
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -13,7 +13,8 @@
 	<header class="entry-header">
 		<h2 class="entry-title">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
-		</h2><!-- .entry-title -->
+		</h2>
+		<div class="posted-date"><?php echo get_the_date('F j, Y'); ?></div>
 	</header>
 
 	<div class="entry-content clearfix">
