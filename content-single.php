@@ -14,6 +14,29 @@
 		<?php
 			the_content();
 
+			$photo_album_links = get_post_meta( get_the_ID(), 'photo-album-link' );
+			if( !empty( $photo_album_links ) ) {
+		?>
+				<div class="tags">
+					<span class="tags-label"><?php _e( 'Albums', 'spacious' ); ?></span>
+					<div class="tags-container">
+						<ul class="photo-albums-list">
+		<?php
+				foreach ($photo_album_links as $link) {
+					$link_obj = json_decode( $link );
+		?>
+							<li>
+								<a href="<?php echo $link_obj->url; ?>"><?php echo $link_obj->name; ?></a>
+							</li>
+		<?php
+				}
+		?>
+						</ul>
+					</div>
+				</div>
+		<?php
+			}
+
 			$spacious_tag_list = get_the_tag_list( '', ' ', '' );
 			if( !empty( $spacious_tag_list ) ) {
 		?>
