@@ -1883,9 +1883,14 @@ body:not(.single-post) .post .entry-content p::after {
 	border-bottom: 2px solid #B41313;
 }
 .single #content .tags .photo-albums-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
 	margin-bottom: 0;
 	padding-left: 0;
+}
+.single #content .tags .photo-albums-list a {
+	margin-right: 15px;
 }
 
 /* header media css
