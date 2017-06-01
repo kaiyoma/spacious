@@ -19,20 +19,16 @@
 		?>
 				<div class="tags">
 					<span class="tags-label"><?php _e( 'Albums', 'spacious' ); ?></span>
-					<div class="tags-container">
-						<ul class="photo-albums-list">
+					<span class="tags-container">
 		<?php
 				foreach ($photo_album_links as $link) {
 					$link_obj = json_decode( $link );
 		?>
-							<li>
-								<a href="<?php echo $link_obj->url; ?>"><?php echo $link_obj->name; ?></a>
-							</li>
+						<a href="<?php echo $link_obj->url; ?>"><?php echo $link_obj->name; ?></a>
 		<?php
 				}
 		?>
-						</ul>
-					</div>
+					</span>
 				</div>
 		<?php
 			}
