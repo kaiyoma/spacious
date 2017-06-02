@@ -329,7 +329,7 @@ button:hover {
 }
 .previous a:hover,
 .next a:hover {
-	border-bottom: 2px solid;
+	border-bottom: 1px solid;
 }
 input[type="reset"]:active,
 input[type="button"]:active,
@@ -1519,7 +1519,7 @@ li.default-menu {
 	font-size: 17px;
 }
 #secondary a:hover {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     color: #B41313 !important;
     text-decoration: none;
 }
@@ -1744,7 +1744,7 @@ body:not(.single-post) .post .entry-content p::after {
 	color: #B41313;
 }
 .post .entry-title a:hover, .page .entry-title a:hover {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 }
 .post .entry-content {
 	margin-bottom: 10px;
@@ -1785,7 +1785,7 @@ body:not(.single-post) .post .entry-content p::after {
 	border-bottom: 1px dotted;
 }
 .entry-content a:not(.album-header-blog):not(.album-thumbnail):not([data-slb-active="1"]):hover {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     text-decoration: none;
 }
 .blog-medium .post .post-featured-image {
@@ -1880,7 +1880,7 @@ body:not(.single-post) .post .entry-content p::after {
 }
 .single #content .tags a:hover {
 	text-decoration: none;
-	border-bottom: 2px solid #B41313;
+	border-bottom: 1px solid #B41313;
 }
 
 /* header media css
@@ -2188,7 +2188,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 }
 
 .portfolio .title:hover {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 /* Photography page
