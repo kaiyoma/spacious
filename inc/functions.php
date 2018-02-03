@@ -46,6 +46,9 @@ function spacious_scripts_styles_method() {
    // Add Genericons, used in the main stylesheet.
    wp_enqueue_style( 'spacious-genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.3.1' );
 
+   // Enqueue font-awesome style.
+   wp_enqueue_style( 'spacious-font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
+
 	/**
 	 * Adds JavaScript to pages with the comment form to support
 	 * sites with threaded comments (when in use).
@@ -181,6 +184,9 @@ function spacious_body_class( $classes ) {
 	elseif( $layout_meta == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
 	elseif( $layout_meta == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
 
+	if( spacious_options( 'spacious_new_menu', 0 ) == '1' ){
+		$classes[] = 'better-responsive-menu';
+	}
 
 	if ( spacious_options( 'spacious_archive_display_type', 'blog_large' ) == 'blog_medium_alternate' ) {
 		$classes[] = 'blog-alternate-medium';
@@ -306,7 +312,7 @@ function spacious_darkcolor($hex, $steps) {
 
 /****************************************************************************************/
 
-add_action('wp_head', 'spacious_custom_css');
+add_action('wp_head', 'spacious_custom_css', 100);
 /**
  * Hooks the Custom Internal CSS to head section
  */
@@ -592,7 +598,7 @@ function spacious_entry_meta() {
 
 	  <?php edit_post_link( __( 'Edit', 'spacious' ), '<span class="edit-link">', '</span>' ); ?>
 
-	  <?php if ( ( spacious_options( 'spacious_archive_display_type', 'blog_large' ) != 'blog_full_content' ) && !is_single() ) { ?>
+	  <?php if ( ( ( spacious_options( 'spacious_archive_display_type', 'blog_large' ) != 'blog_full_content' ) && ! is_single() ) || is_archive() || is_search() ) { ?>
 		 <span class="read-more-link"><a class="read-more" href="<?php the_permalink(); ?>"><?php _e( 'Read more', 'spacious' ); ?></a></span>
 	  <?php } ?>
 
