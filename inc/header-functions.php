@@ -162,7 +162,7 @@ function spacious_header_title() {
 		endif;
 	}
 	elseif( is_404() ) {
-		$spacious_header_title = __( 'Page NOT Found', 'spacious' );
+		$spacious_header_title = __( 'Page Not Found', 'spacious' );
 	}
 	elseif( is_search() ) {
 		$spacious_header_title = __( 'Search Results', 'spacious' );
