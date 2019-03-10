@@ -1,17 +1,17 @@
-# Copyright (C) 2018 ThemeGrill
-# This file is distributed under the GNU General Public License v2 or later.
+# <!=Copyright (C) 2019 kaiyoma
+# This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Spacious 1.4.9\n"
+"Project-Id-Version: Spacious (Modified) 1.4.9\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-01-31 09:52:16+00:00\n"
+"POT-Creation-Date: 2019-03-10 00:03:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
 
 #: inc/admin/class-spacious-admin.php:360
 msgid "5"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: content-blog-full-content.php:23 content-page.php:17 content-single.php:29
+#: content-blog-full-content.php:24 content-page.php:17
 msgid "Pages:"
 msgstr ""
 
@@ -55,8 +55,16 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: content-single.php:22
-msgid "Tagged on: "
+#: content-single.php:21
+msgid "Albums"
+msgstr ""
+
+#: content-single.php:40
+msgid "Tags"
+msgstr ""
+
+#: content-single.php:50
+msgid "Categories"
 msgstr ""
 
 #: functions.php:85 functions.php:296
@@ -188,7 +196,7 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: header.php:98
+#: header.php:128
 msgid "Menu"
 msgstr ""
 
@@ -377,7 +385,7 @@ msgstr ""
 msgid "Features"
 msgstr ""
 
-#. Theme Name of the plugin/theme
+#: inc/admin/class-spacious-admin.php:353 inc/demo-config.php:24
 msgid "Spacious"
 msgstr ""
 
@@ -834,7 +842,7 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
-#. Author of the plugin/theme
+#: inc/functions.php:501
 msgid "ThemeGrill"
 msgstr ""
 
@@ -913,7 +921,7 @@ msgid "Archives"
 msgstr ""
 
 #: inc/header-functions.php:165
-msgid "Page NOT Found"
+msgid "Page Not Found"
 msgstr ""
 
 #: inc/header-functions.php:168
@@ -1453,25 +1461,24 @@ msgstr ""
 msgid "Meta"
 msgstr ""
 
+#. Theme Name of the plugin/theme
+msgid "Spacious (Modified)"
+msgstr ""
+
 #. Theme URI of the plugin/theme
-msgid "https://themegrill.com/themes/spacious"
+msgid "https://github.com/kaiyoma/spacious"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid ""
-"Spacious is an incredibly spacious multipurpose responsive theme coded & "
-"designed with a lot of care and love. You can use it for your business, "
-"portfolio, blogging or any type of site. It has 4 page layouts, 2 page "
-"templates, 4 blog display types, 13 widgets areas, 5 custom widgets "
-"focusing on business template, awesome slider, primary color option to "
-"match your logo & website, boxed & wide layout, light & dark color skin, "
-"translation ready and many more. You can get free support in "
-"https://themegrill.com/support-forum/ and check the demo at "
-"https://demo.themegrill.com/spacious/."
+msgid "Custom theme for http://www.kylegetz.me"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "kaiyoma"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://themegrill.com"
+msgid "https://github.com/kaiyoma"
 msgstr ""
 
 #. Template Name of the plugin/theme

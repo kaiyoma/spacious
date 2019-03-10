@@ -73,7 +73,7 @@ module.exports = function( grunt ){
 		// Compress files and folders.
 		compress: {
 			options: {
-				archive: 'spacious.zip'
+				archive: 'spacious-modified.zip'
 			},
 			files: {
 				src: [
@@ -86,7 +86,7 @@ module.exports = function( grunt ){
 					'!package.json',
 					'!node_modules/**'
 				],
-				dest: 'spacious',
+				dest: 'spacious-modified',
 				expand: true
 			}
 		}
