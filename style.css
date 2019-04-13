@@ -2419,23 +2419,16 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* About page
+/* About widget
 ----------------------------------------------- */
-.about-container {
-  margin-top: 10px;
-}
-
-.about-photo-container {
+.widget .about-photo-container {
   text-align: center;
 }
 
-.about-text-spacer {
-  height: 20px;
-}
-
-.profile-photo {
+.widget .about-photo-container .profile-photo {
   border-radius: 50%;
-  margin-bottom: 40px;
+	max-width: 50%;
+	min-width: 180px;
 }
 
 /* Simple Lightbox
