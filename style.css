@@ -1800,9 +1800,6 @@ body:not(.single-post) .post .entry-content p::after {
 .entry-content li > ol {
 	margin-bottom: 0;
 }
-.post .entry-content a:not([data-slb-active="1"]) {
-	border-bottom: 1px dotted;
-}
 .entry-content a:not(.album-header-blog):not(.album-thumbnail):not([data-slb-active="1"]):hover {
     border-bottom: 1px solid;
     text-decoration: none;
