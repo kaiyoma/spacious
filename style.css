@@ -1767,7 +1767,7 @@ body:not(.single-post) .post .entry-content p::after {
 }
 .post .entry-content {
 	margin-bottom: 10px;
-    font-family: Georgia, serif;
+    font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 28px
 }
