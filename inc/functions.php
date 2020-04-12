@@ -62,7 +62,7 @@ function spacious_scripts_styles_method() {
 	wp_register_script( 'jquery_cycle', SPACIOUS_JS_URL . '/jquery.cycle2.min.js', array( 'jquery' ), '2.1.6', true );
 	wp_register_script( 'jquery-swipe', SPACIOUS_JS_URL . '/jquery.cycle2.swipe.min.js', array( 'jquery' ), false, true );
 
-	wp_register_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato' );
+	wp_register_style( 'google_fonts', '//fonts.googleapis.com/css?family=Lato&display=swap' );
 
 	/**
 	 * Enqueue Slider setup js file.
