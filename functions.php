@@ -55,12 +55,6 @@ add_action( 'after_setup_theme', 'spacious_setup' );
 if( !function_exists( 'spacious_setup' ) ) :
 function spacious_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 */
-	load_theme_textdomain( 'spacious', get_template_directory() . '/languages' );
-
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
@@ -329,7 +323,6 @@ define( 'SPACIOUS_CHILD_DIR', get_stylesheet_directory() );
 define( 'SPACIOUS_INCLUDES_DIR', SPACIOUS_PARENT_DIR. '/inc' );
 define( 'SPACIOUS_CSS_DIR', SPACIOUS_PARENT_DIR . '/css' );
 define( 'SPACIOUS_JS_DIR', SPACIOUS_PARENT_DIR . '/js' );
-define( 'SPACIOUS_LANGUAGES_DIR', SPACIOUS_PARENT_DIR . '/languages' );
 
 define( 'SPACIOUS_ADMIN_DIR', SPACIOUS_INCLUDES_DIR . '/admin' );
 define( 'SPACIOUS_WIDGETS_DIR', SPACIOUS_INCLUDES_DIR . '/widgets' );
@@ -347,7 +340,6 @@ define( 'SPACIOUS_CHILD_URL', get_stylesheet_directory_uri() );
 define( 'SPACIOUS_INCLUDES_URL', SPACIOUS_PARENT_URL. '/inc' );
 define( 'SPACIOUS_CSS_URL', SPACIOUS_PARENT_URL . '/css' );
 define( 'SPACIOUS_JS_URL', SPACIOUS_PARENT_URL . '/js' );
-define( 'SPACIOUS_LANGUAGES_URL', SPACIOUS_PARENT_URL . '/languages' );
 
 define( 'SPACIOUS_ADMIN_URL', SPACIOUS_INCLUDES_URL . '/admin' );
 define( 'SPACIOUS_WIDGETS_URL', SPACIOUS_INCLUDES_URL . '/widgets' );
