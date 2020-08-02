@@ -191,14 +191,14 @@ function spacious_body_class( $classes ) {
 	if ( spacious_options( 'spacious_archive_display_type', 'blog_large' ) == 'blog_medium' ) {
 		$classes[] = 'blog-medium';
 	}
-	if( spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'wide_978px' ) {
+	if( spacious_options( 'spacious_site_layout', 'box_1160px' ) == 'wide_978px' ) {
 		$classes[] = 'wide-978';
 	}
-	elseif( spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'box_978px' ) {
+	elseif( spacious_options( 'spacious_site_layout', 'box_1160px' ) == 'box_978px' ) {
 		$classes[] = 'narrow-978';
 	}
-	elseif( spacious_options( 'spacious_site_layout', 'box_1218px' ) == 'wide_1218px' ) {
-		$classes[] = 'wide-1218';
+	elseif( spacious_options( 'spacious_site_layout', 'box_1160px' ) == 'wide_1160px' ) {
+		$classes[] = 'wide-1160';
 	}
 	else {
 		$classes[] = '';

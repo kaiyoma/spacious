@@ -211,7 +211,7 @@ function spacious_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( $spacious_themename . '[spacious_site_layout]', array(
-		'default'           => 'box_1218px',
+		'default'           => 'box_1160px',
 		'type'              => 'option',
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'spacious_radio_select_sanitize',
@@ -221,9 +221,9 @@ function spacious_customize_register( $wp_customize ) {
 		'type'    => 'radio',
 		'label'   => __( 'Choose your site layout. The change is reflected in whole site.', 'spacious' ),
 		'choices' => array(
-			'box_1218px'  => __( 'Boxed layout with content width of 1218px', 'spacious' ),
+			'box_1160px'  => __( 'Boxed layout with content width of 1160px', 'spacious' ),
 			'box_978px'   => __( 'Boxed layout with content width of 978px', 'spacious' ),
-			'wide_1218px' => __( 'Wide layout with content width of 1218px', 'spacious' ),
+			'wide_1160px' => __( 'Wide layout with content width of 1160px', 'spacious' ),
 			'wide_978px'  => __( 'Wide layout with content width of 978px', 'spacious' ),
 		),
 		'section' => 'spacious_site_layout_setting',
