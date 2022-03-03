@@ -4,13 +4,13 @@ specifiers:
   grunt: 1.4.1
   grunt-cli: 1.4.3
   grunt-contrib-compress: 2.0.0
-  grunt-contrib-jshint: 3.1.1
+  grunt-contrib-jshint: 3.2.0
 
 devDependencies:
   grunt: 1.4.1
   grunt-cli: 1.4.3
   grunt-contrib-compress: 2.0.0
-  grunt-contrib-jshint: 3.1.1
+  grunt-contrib-jshint: 3.2.0
 
 packages:
 
@@ -428,8 +428,8 @@ packages:
       stream-buffers: 3.0.2
     dev: true
 
-  /grunt-contrib-jshint/3.1.1:
-    resolution: {integrity: sha512-EwMY6L91FqTcMlZTVoDeeq/EZL+7MoFyo1rxIea9sxyv73geVggeE37jcUhNbu5hLbxHE82CGIUqitHuR2/q+g==}
+  /grunt-contrib-jshint/3.2.0:
+    resolution: {integrity: sha512-pcXWCSZWfoMSvcV4BwH21TUtLtcX0Ms8IGuOPIcLeXK3fud9KclY7iqMKY94jFx8TxZzh028YYtpR+io8DiEaQ==}
     engines: {node: '>=10'}
     dependencies:
       chalk: 4.1.2
