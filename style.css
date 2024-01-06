@@ -1731,7 +1731,7 @@ a#scroll-up:hover {
 /* =POST CONTENT
 ----------------------------------------------- */
 /* Show an ellipsis after the summary in the blog list view. */
-body:not(.single-post) .post .entry-content p::after {
+body:not(.single-post):not(.single-podcast) .post .entry-content p::after {
   content: " ...";
 }
 #content .post, #content .page {
