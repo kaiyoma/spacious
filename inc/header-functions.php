@@ -157,7 +157,8 @@ function spacious_header_title() {
 			$spacious_header_title = woocommerce_page_title( false );
 
 		else :
-			$spacious_header_title = __( 'Archives', 'spacious' );
+      // Janky, but works, since "Podcast" is the only visible page that ends up here
+			$spacious_header_title = __( 'Podcast', 'spacious' );
 
 		endif;
 	}
